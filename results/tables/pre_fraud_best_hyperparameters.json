@@ -1,0 +1,32 @@
+{
+  "lgbm": {
+    "n_estimators": 1495,
+    "max_depth": 8,
+    "num_leaves": 51,
+    "learning_rate": 0.005032062882230993,
+    "min_child_samples": 59,
+    "subsample": 0.8522787142520779,
+    "colsample_bytree": 0.733295143098568,
+    "reg_alpha": 0.002090675211690923,
+    "reg_lambda": 3.8562241919714575e-05,
+    "is_unbalance": true,
+    "random_state": 42,
+    "verbosity": -1,
+    "n_jobs": -1
+  },
+  "neural_net": {
+    "hidden_layer_sizes": [
+      58,
+      226
+    ],
+    "activation": "relu",
+    "alpha": 1.795698422567761e-05,
+    "learning_rate_init": 0.0004187594718900631,
+    "batch_size": 256,
+    "max_iter": 150,
+    "early_stopping": true,
+    "validation_fraction": 0.15,
+    "n_iter_no_change": 10,
+    "random_state": 42
+  }
+}

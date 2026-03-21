@@ -1,0 +1,82 @@
+{
+  "Option A: LightGBM": {
+    "model": "Option A: LightGBM",
+    "auc_roc": 0.85111,
+    "auc_pr": 0.382313,
+    "f1": 0.230212,
+    "precision_at_recall_80": 0.093306,
+    "confusion_matrix": [
+      [
+        71722,
+        13776
+      ],
+      [
+        890,
+        2193
+      ]
+    ],
+    "n_test": 88581,
+    "n_positive": 3083,
+    "cv_auc_roc_mean": 0.843811,
+    "cv_auc_roc_std": 0.005079,
+    "cv_auc_roc_folds": [
+      0.851425,
+      0.838388,
+      0.847869,
+      0.839014,
+      0.842358
+    ]
+  },
+  "Option B: NeuralNet": {
+    "model": "Option B: NeuralNet",
+    "auc_roc": 0.759716,
+    "auc_pr": 0.206351,
+    "f1": 0.244817,
+    "precision_at_recall_80": 0.055371,
+    "confusion_matrix": [
+      [
+        84602,
+        896
+      ],
+      [
+        2528,
+        555
+      ]
+    ],
+    "n_test": 88581,
+    "n_positive": 3083,
+    "cv_auc_roc_mean": 0.764185,
+    "cv_auc_roc_std": 0.014197,
+    "cv_auc_roc_folds": [
+      0.762568,
+      0.782324,
+      0.747663
+    ]
+  },
+  "Option C: Ensemble": {
+    "model": "Option C: Ensemble",
+    "auc_roc": 0.584344,
+    "auc_pr": 0.159383,
+    "f1": 0.241023,
+    "precision_at_recall_80": 0.034805,
+    "confusion_matrix": [
+      [
+        81429,
+        4069
+      ],
+      [
+        2103,
+        980
+      ]
+    ],
+    "n_test": 88581,
+    "n_positive": 3083,
+    "cv_auc_roc_mean": 0.788139,
+    "cv_auc_roc_std": 0.067593,
+    "cv_auc_roc_folds": [
+      0.78595,
+      0.871996,
+      0.706471
+    ]
+  }
+}

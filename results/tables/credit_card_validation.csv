@@ -1,0 +1,9 @@
+Stage,N Features,AUC-ROC,AUC-PR,F1,P@R80
+Stage 0: Full Model (V1-V28 + Amount + Time),30,0.9805,0.7654,0.7723,0.1647
+Stage 1: Remove Top-1 Feature,29,0.9792,0.7561,0.7723,0.201
+Stage 2: Remove Top-3 Features,27,0.977,0.7535,0.7525,0.178
+Stage 3: Remove Top-5 Features,25,0.9804,0.7329,0.7451,0.1277
+Stage 4: Remove Top-10 Features,20,0.9645,0.7109,0.6939,0.2414
+Stage 5: Remove Top-15 Features,15,0.9566,0.6723,0.6739,0.0968
+Stage 6: Remove Top-20 Features,10,0.9066,0.536,0.5833,0.0175
+Stage 7: Retain Only V1-V5 + Time,6,0.9407,0.4912,0.4062,0.084

@@ -1,0 +1,121 @@
+data:
+  ieee_transaction_path: "data/raw/train_transaction.csv"
+  ieee_identity_path: "data/raw/train_identity.csv"
+  credit_card_path: "data/raw/creditcard.csv"
+  processed_path: "data/processed/"
+  feature_path: "data/features/"
+  test_size: 0.2
+  validation_size: 0.1
+  random_state: 42
+
+features:
+  # Direct fraud indicators - to be systematically removed
+  direct_indicators:
+    - "TransactionAmt"
+    - "card1"
+    - "card2"
+    - "addr1"
+    - "addr2"
+    - "dist1"
+    - "dist2"
+
+  # Indirect behavioural indicators - the focus of this study
+  behavioural_indicators:
+    temporal:
+      - "TransactionDT"
+      - "D1"
+      - "D2"
+      - "D3"
+      - "D4"
+      - "D5"
+      - "D6"
+      - "D7"
+      - "D8"
+      - "D9"
+      - "D10"
+      - "D11"
+      - "D12"
+      - "D13"
+      - "D14"
+      - "D15"
+    device:
+      - "DeviceType"
+      - "DeviceInfo"
+      - "id_30"
+      - "id_31"
+      - "id_33"
+    email:
+      - "P_emaildomain"
+      - "R_emaildomain"
+    counting:
+      - "C1"
+      - "C2"
+      - "C3"
+      - "C4"
+      - "C5"
+      - "C6"
+      - "C7"
+      - "C8"
+      - "C9"
+      - "C10"
+      - "C11"
+      - "C12"
+      - "C13"
+      - "C14"
+    match:
+      - "M1"
+      - "M2"
+      - "M3"
+      - "M4"
+      - "M5"
+      - "M6"
+      - "M7"
+      - "M8"
+      - "M9"
+    vesta:
+      - "V1_through_V339"
+
+  # Drift dimensions for decomposition analysis
+  drift_dimensions:
+    - "amount_drift"
+    - "temporal_drift"
+    - "device_drift"
+    - "geographic_drift"
+    - "channel_drift"
+
+model:
+  baseline:
+    type: "xgboost"
+    params:
+      n_estimators: 500
+      max_depth: 8
+      learning_rate: 0.05
+      subsample: 0.8
+      colsample_bytree: 0.8
+      scale_pos_weight: "auto"
+      eval_metric: "auc"
+      early_stopping_rounds: 50
+
+  pre_fraud:
+    type: "lightgbm"
+    params:
+      n_estimators: 1000
+      max_depth: 6
+      learning_rate: 0.01
+      num_leaves: 63
+      min_child_samples: 50
+      is_unbalance: true
+
+evaluation:
+  metrics:
+    - "auc_roc"
+    - "auc_pr"
+    - "f1_score"
+    - "precision_at_recall_80"
+    - "detection_lead_time"
+  cross_validation_folds: 5
+
+results:
+  figures_path: "results/figures/"
+  tables_path: "results/tables/"
+  logs_path: "results/logs/"

@@ -1,0 +1,4 @@
+model_a,model_b,b,c,chi2,p_value,significant_0.05
+Option A: LightGBM,Option B: NeuralNet,1853,13095,8453.310209,0.0,True
+Option A: LightGBM,Option C: Ensemble,2695,11189,5195.264261,0.0,True
+Option B: NeuralNet,Option C: Ensemble,3173,425,2097.278766,0.0,True

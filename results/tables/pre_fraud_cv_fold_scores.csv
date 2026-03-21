@@ -1,0 +1,12 @@
+model,fold,auc_roc
+LightGBM,1,0.851425
+LightGBM,2,0.838388
+LightGBM,3,0.847869
+LightGBM,4,0.839014
+LightGBM,5,0.842358
+NeuralNet,1,0.762568
+NeuralNet,2,0.782324
+NeuralNet,3,0.747663
+Ensemble,1,0.78595
+Ensemble,2,0.871996
+Ensemble,3,0.706471

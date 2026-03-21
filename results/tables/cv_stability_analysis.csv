@@ -1,0 +1,4 @@
+Model,Metric,Mean,Std,Min,Max,CV (%),n_folds
+Baseline XGBoost,auc_roc,0.961209,0.002774,0.957771,0.965093,0.29,5
+Baseline XGBoost,auc_pr,0.787146,0.01035,0.775144,0.801519,1.31,5
+Baseline XGBoost,f1,0.596652,0.007892,0.584877,0.606007,1.32,5

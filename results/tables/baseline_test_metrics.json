@@ -1,0 +1,18 @@
+{
+  "auc_roc": 0.896912,
+  "auc_pr": 0.514701,
+  "f1": 0.442881,
+  "precision_at_recall_80": 0.148588,
+  "confusion_matrix": [
+    [
+      82604,
+      2894
+    ],
+    [
+      1383,
+      1700
+    ]
+  ],
+  "n_test_samples": 88581,
+  "n_test_positive": 3083
+}
