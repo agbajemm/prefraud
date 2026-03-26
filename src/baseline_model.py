@@ -21,7 +21,7 @@ Key capabilities
 
 Target performance: AUC-ROC > 0.95 with full feature set.
 
-Author : MSc Pre-Fraud Research Project
+Author : Michael Okonkwo (23090303)
 """
 
 from __future__ import annotations

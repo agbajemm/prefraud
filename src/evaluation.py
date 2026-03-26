@@ -17,9 +17,9 @@ Key capabilities
 - Computational cost comparison (training and inference)
 - Credit Card dataset replication experiment
 - McNemar's statistical significance test between model pairs
-- Full automated report generation
+- Full report generation
 
-Author : MSc Pre-Fraud Research Project
+Author : Michael Okonkwo (23090303)
 """
 
 from __future__ import annotations

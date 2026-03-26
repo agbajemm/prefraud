@@ -3,5 +3,5 @@ __pycache__/
 data/raw/
 data/processed/
 *.pkl
-.claude/
+.ide/
 results/tables/drift_scores.csv

@@ -27,7 +27,7 @@ conducts McNemar's test for pairwise statistical significance, generates
 SHAP and partial-dependence interpretability plots, and persists every
 artifact to disk.
 
-Author : MSc Pre-Fraud Research Project
+Author : Michael Okonkwo (23090303)
 """
 
 from __future__ import annotations
